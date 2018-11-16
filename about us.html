@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>HOORAYZONE Travel &amp; Tours</title>
+		<link rel="stylesheet" href="css/about_us_style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+		<body>
+			<div class="main-header">
+							<ul id="main-menu">
+								<a href="index.html"><li class="button">Home</li></a>
+								<a href="about us.html"><li class="button">About Us</li></a>
+								<a href="offers.html"><li class="button">Offers</li></a>
+								<a href="contacts.html"><li class="button">Contact</li></a>
+							</ul>
+				
+				</div>
+				
+			<div class="boxx">
+					
+					<div id="box11">
+						<h1>About Us</h1>
+						<p> Hoorayzone operates a network of specialized web sites under the <a href="index.html">Hoorayzoneonline.ph</a> banner,
+						designed to assist the Philippines' traveler with all aspects of booking a holiday. Our Agents give a
+						quick response, the best price, and personal service when you want it. Our goal is to make
+						your vacation-hassle free! It is time to move out from your comfort zone. Worry less, wander more. Think less, enjoy more.</p>
+					</div>
+				
+				<div id="box22">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<div class="numbertext">1 / 5</div>
+							<img src="images/a.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">2 / 5</div>
+							<img src="images/b.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides fade">
+							<div class="numbertext">3 / 5</div>
+							<img src="images/c.jpg" style="width:100%">
+						</div>
+							  
+						<div class="mySlides fade">
+							<div class="numbertext">4 / 5</div>
+							<img src="images/d.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="numbertext">5 / 5</div>
+							<img src="images/e.jpg" style="width:100%">
+						</div>
+						
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+							<br>
+
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span> 
+								<span class="dot" onclick="currentSlide(2)"></span> 
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+								<span class="dot" onclick="currentSlide(5)"></span> 					
+							</div>
+				</div>
+			
+			
+			<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+								var i;
+								var slides = document.getElementsByClassName("mySlides");
+								var dots = document.getElementsByClassName("dot");
+								for (i = 0; i < slides.length; i++) {
+								   slides[i].style.display = "none";  
+								}
+								slideIndex++;
+								if (slideIndex > slides.length) {slideIndex = 1}    
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";  
+								dots[slideIndex-1].className += " active";
+								setTimeout(showSlides, 2000);
+							}
+						</script>	
+				
+					<div id="box33">
+						<center><p>"Fill your life with adventures, not things. have stories to tell, not stuff to show."</p></center>
+					</div>
+					
+					<div id="box44">
+						<center><img src="images/trylogo.png"></center>
+					</div>
+					
+					<div id="box55">
+						<center><p>"A journey of a thousand miles begins with a single step."</p></center>
+					</div>
+					
+			</div>
+			
+			<div class="footer">				
+				<p>&copy Hoorayzone Travel &amp; Tours, 2018</p>
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+				<a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+			</div>
+		</body>
+</html>		
